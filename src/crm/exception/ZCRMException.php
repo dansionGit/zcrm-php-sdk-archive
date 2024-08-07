@@ -6,23 +6,6 @@ class ZCRMException extends \Exception
     
     protected $message = 'Unknown exception';
     
-    // Exception message
-    private $string;
-    
-    // Unknown
-    protected $code = 0;
-    
-    // User-defined exception code
-    protected $file;
-    
-    // Source filename of exception
-    protected $line;
-    
-    // Source line of exception
-    private $trace;
-    
-    private $exceptionCode = "Unknown";
-    
     private $exceptionDetails = array();
     
     public function __construct($message = null, $code = 0)
